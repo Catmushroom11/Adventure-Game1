@@ -14,7 +14,15 @@ if choice1 == 'y':
   print('The sound suddenly stops.')
   print('You are now LOST! ... ')
   print('You try to call on your phone, but there is no signal!')
-  
+direction = input('Which direction do you go? north, south, east, or west: ')
+if direction == 'north':
+  print('You reached an abandoned cabin.')
+  if item == 'm':
+    print('You use the map and find your way home.')
+    print('CONGRATULATIONS! You won the game. ')
+  else:
+    print('If you had a map, you could find your way home from here.')
+    print('---You are still lost. You lost the game.---')
 else:
   print('Good idea. You are not taking risks. ')
   print('You start walking back to the starting point.')
