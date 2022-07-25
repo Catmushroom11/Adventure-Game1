@@ -23,6 +23,30 @@ if direction == 'north':
   else:
     print('If you had a map, you could find your way home from here.')
     print('---You are still lost. You lost the game.---')
+elif direction == 'south':
+  print('You reach a river with a broken bridge.')
+  if item == 'r' or item == 's':
+    print('You chose the item that can help fix the bridge.')
+    print('You fix that bridge and find that it leads to an old hiking trail')
+    print('You follow the trail back to the city')
+    print('CONGRATULATIONS! You won the game.')
+    else:
+      print('If you had some rope or sticks, you could fix the bridge.')
+      print('---You are still lost, You lost the game.---')
+ elif direction == 'west':
+  print('You are walking and you trip over a fallen log.')
+  print('You have hurt your foot. You sit down to wait for help.')
+  print('This could be along time. You are still lost.')
+  print('---You lost the game.---')
+  else:
+    print('You reach the side of the highway. It is dark.')
+    if item == 'f':
+      print('You can use the flashlight to signal.')
+      print('A car stops and gives you a ride home.')
+      print('CONGRATULATIONS! You won the game.')
+    else:
+      print('If you had a flashlight you could signal for help.')
+      print('---You are stll lost. You lost the game.---')
 else:
   print('Good idea. You are not taking risks. ')
   print('You start walking back to the starting point.')
