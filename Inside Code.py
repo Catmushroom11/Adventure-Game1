@@ -1,4 +1,6 @@
 # adventure game
+import time
+
 print('Welcome to the Santa Cruz Mountain Adventure Game!')
 print('*************************************************')
 print('You are visiting Santa Cruz, California.')
@@ -12,8 +14,11 @@ while not (choice1 == 'y' or choice1 == 'n'):
   choice1 = input('That is an invalid input. Enter y or n: ')
 if choice1 == 'y':
     print('You keep moving closer to the sound.')
+    time.sleep(3)
     print('The sound suddenly stops.')
+    time.sleep(3)
     print('You are now LOST! ... ')
+    time.sleep(3)
     print('You try to call on your phone, but there is no signal!')
     direction = input('Which direction do you go? north, south, east, or west: ')
     if direction == 'north':
@@ -64,7 +69,7 @@ else:
         print('She says, "Yes, Python is my favorite programming language."')
         print('"If you have some chocolate, I can help you."')
         if item == 'c':
-            print('Luckily you did choose correctly!')
+            print('Luckily you chose correctly!')
             print('You give her the chocolate.')
             print('She helps you get home.')
             print('CONGRATULATIONS! You got out safely. You won the game.')
