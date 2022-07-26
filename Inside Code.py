@@ -1,5 +1,4 @@
 # adventure game
-import time
 print('Welcome to the Santa Cruz Mountain Adventure Game!')
 print('*************************************************')
 print('You are visiting Santa Cruz, California.')
@@ -9,17 +8,14 @@ print('map (m), flashlight(f), chocolate (c), rope(r), or stick (s): ')
 item = input('What do you choose?: ')
 print('You hear a humming sound.')
 choice1 = input('Do you follow the sound? Enter y or n: ')
-if choice1 == 'y':
 while not (choice1 == 'y' or choice1 == 'n'):
-  choice1 = input('That is an invalid response. Enter y or n: ')
+  choice1 = input('That is an invalid input. Enter y or n: ')
 if choice1 == 'y':
     print('You keep moving closer to the sound.')
     print('The sound suddenly stops.')
-    time.sleep(3)
     print('You are now LOST! ... ')
-    time.sleep(3)
     print('You try to call on your phone, but there is no signal!')
- direction = input('Which direction do you go? north, south, east, or west: ')
+    direction = input('Which direction do you go? north, south, east, or west: ')
     if direction == 'north':
         print('You reach an abandoned cabin.')
         if item == 'm':
@@ -68,7 +64,7 @@ else:
         print('She says, "Yes, Python is my favorite programming language."')
         print('"If you have some chocolate, I can help you."')
         if item == 'c':
-            print('Luckily you chose correctly!')
+            print('Luckily you did choose correctly!')
             print('You give her the chocolate.')
             print('She helps you get home.')
             print('CONGRATULATIONS! You got out safely. You won the game.')
