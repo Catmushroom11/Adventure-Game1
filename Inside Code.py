@@ -1,6 +1,5 @@
 #adventure game
 import time
-
 print('Welcome to Santa Cruz Mountain Adventure Game!')
 print('**********************************************')
 print('You are visiting Santa Cruz, California.')
